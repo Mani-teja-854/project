@@ -1,0 +1,203 @@
+<html>
+    <head></head>
+    <style>
+        .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 500px;
+  height: 400px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
+    <body>
+        <br>
+<center>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="mr.captian_18-20221213-0001.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <center>
+            <h1>MANI TEJA</h1>
+            <p>OWNER</p>
+
+            <p>Guide & traveller</p>
+            </center>
+
+          </div>
+        </div>
+      </div>
+</center>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <br>
+    <p>
+        Our mission is to provide quality service to our clients and bundle exclusivity in our services.
+         Our team members at Indian Holiday Pvt.</p>
+  </div>
+  <br><br>
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="mahesh.jpg" alt="mahesh" style="width:100%">
+        <div class="container">
+          <h2>MAHESH</h2>
+          <p class="title">Assistant</p>
+          <p>They will  make your holiday very bueatiful.</p>
+          <p>luckymahesh243@gmail.com</p>
+          <P>cell:7794886440</P>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="yesh3.jpg" alt="Yeshwanth" style="width:100%">
+        <div class="container">
+          <h2>YESWANTH</h2>
+          <p class="title">Assistant</p>
+          <p>They will make your holiday very bueatiful.</p>
+          <p>yeshwanth@gmail.com</p>
+          <p>cell:6379139385</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column" width="200" >
+      <div class="card">
+        <img src="joe;.jpg" alt="Joel" style="width:100%">
+        <div class="container">
+          <h2>JOEL</h2>
+          <p class="title">Assistant</p>
+          <p>They will make your holiday very bueatiful.</p>
+          <p>jashwanthjoel8779@gmailcom</p>
+          <p>9398000365</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  </body>
+</html>
